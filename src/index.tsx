@@ -1,11 +1,15 @@
+import { ChakraProvider } from '@chakra-ui/provider';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import PostCodeForm from './PostCodeForm';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    Aus Post Code Checker
+    {/* Required to set up Chakra UI needs to wrap all components using Chakra*/}
+    <ChakraProvider>
+      <PostCodeForm />
+    </ChakraProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
