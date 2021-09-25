@@ -20,7 +20,7 @@ export default function PostCodeForm() {
           state: "",
         }}
         onSubmit={async (values, { setErrors }) => {
-          fetch(`http://localhost:5000/postcode/search.json?q=${values.suburb}&state=${values.state}`)
+          fetch(`http://localhost:5000/postcode/search.json?q=${values.suburb}`)
             .then(response => response.json())
             .then(data => {
               toast({
