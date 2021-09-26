@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Australian Post Code Checker
 
 This project is a simple Australian post code checker consisting of a react typescript front end and a simple proxy server backend.
 
