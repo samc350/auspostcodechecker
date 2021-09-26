@@ -35,7 +35,7 @@ export default function PostCodeForm() {
       >
         {({ isSubmitting }) => (
           <Form>
-            <Text fontSize={'4xl'}>Aus Post Code Checker</Text>
+            <Text fontSize={'4xl'}>Australian Post Code Checker</Text>
             <Box mt={4}>
               <SelectInputField name="state" placeholder="Enter State Here" label="State" required options={STATES} />
             </Box>
