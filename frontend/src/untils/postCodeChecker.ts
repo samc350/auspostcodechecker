@@ -28,7 +28,6 @@ interface apiResponse {
  * @returns 
  */
 export const checkPostCode = ({ state, postCode, suburb }: valuesType, data: apiResponse): string => {
-  console.log(data);
   if (data.localities && data.localities.locality) {
     const areas = data.localities.locality;
     let areaWithPostCode: localityDate | undefined;
